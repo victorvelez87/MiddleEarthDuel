@@ -1,0 +1,31 @@
+<!-- Botón para abrir el modal -->
+<button class="btn" (click)="openModal()"><img src="./assets/logos/83.png" height="40" width="40" /></button>
+
+<!-- Modal con carousel de imágenes -->
+<div class="modal fade" [class.show]="showModal" tabindex="-1" [style.display]="showModal ? 'block' : 'none'">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Reglamento</h5>
+                <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div *ngFor="let image of images; let i = index" class="carousel-item" [class.active]="i === 0">
+                            <img [src]="image" class="d-block w-100" alt="Imagen {{ i + 1 }}" height="auto" width="80%">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

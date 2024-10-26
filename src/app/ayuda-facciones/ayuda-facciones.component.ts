@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AyudaFaccionesComponent {
   images: string[] = [
-    './assets/ayudaIconos/facciones.jpg',
+    'assets/ayudaIconos/facciones.jpg',
     // Agrega más URLs de imágenes si deseas
   ];
 

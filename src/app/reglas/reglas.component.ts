@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ReglasComponent {
   images: string[] = [
-    './assets/reglas/ayuda1.jpg',
-    './assets/reglas/ayuda2.jpg',
-    './assets/reglas/ayuda3.jpg',
-    './assets/reglas/ayuda4.jpg',
-    './assets/reglas/ayuda5.jpg',
-    './assets/reglas/ayuda6.jpg'
+    'assets/reglas/ayuda1.jpg',
+    'assets/reglas/ayuda2.jpg',
+    'assets/reglas/ayuda3.jpg',
+    'assets/reglas/ayuda4.jpg',
+    'assets/reglas/ayuda5.jpg',
+    'assets/reglas/ayuda6.jpg'
   ];
 
   showModal: boolean = false; // Controla la visibilidad del modal

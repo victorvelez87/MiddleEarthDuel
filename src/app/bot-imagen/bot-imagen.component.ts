@@ -7,18 +7,18 @@ import { Component } from '@angular/core';
 })
 export class BotImagenComponent {
   images: string[] = [
-    './assets/botCartas/1.jpg',
-    './assets/botCartas/2.jpg',
-    './assets/botCartas/3.jpg',
-    './assets/botCartas/4.jpg',
-    './assets/botCartas/5.jpg',
-    './assets/botCartas/6.jpg',
-    './assets/botCartas/7.jpg',
-    './assets/botCartas/8.jpg',
-    './assets/botCartas/9.jpg',
-    './assets/botCartas/10.jpg',
-    './assets/botCartas/11.jpg',
-    './assets/botCartas/12.jpg'
+    'assets/botCartas/1.jpg',
+    'assets/botCartas/2.jpg',
+    'assets/botCartas/3.jpg',
+    'assets/botCartas/4.jpg',
+    'assets/botCartas/5.jpg',
+    'assets/botCartas/6.jpg',
+    'assets/botCartas/7.jpg',
+    'assets/botCartas/8.jpg',
+    'assets/botCartas/9.jpg',
+    'assets/botCartas/10.jpg',
+    'assets/botCartas/11.jpg',
+    'assets/botCartas/12.jpg'
     // Agrega más URLs de imágenes si deseas
  ];
 

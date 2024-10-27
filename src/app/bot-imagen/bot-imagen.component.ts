@@ -24,6 +24,7 @@ export class BotImagenComponent {
 
  displayedImages: string[] = []; // Almacena las imágenes mostradas
  currentImage: string = ''; // Imagen que se muestra actualmente
+ currentCard: string = '';
 
  constructor() {
   this.showRandomImage();
@@ -42,6 +43,7 @@ export class BotImagenComponent {
     } while (this.displayedImages.includes(newImage));
 
     this.currentImage = newImage;
+    this.currentCard = newImage.replace("assets/botCartas/","").replace(".jpg","");
     this.displayedImages.push(newImage); // Añadir la imagen actual a las ya vistas
   }
 

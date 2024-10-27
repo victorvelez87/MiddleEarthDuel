@@ -9,8 +9,8 @@
 
 <style>
      :host {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        font-size: 14px;
+        font-family: 'Ringbearer', serif;
+        font-size: 1rem;
         color: #333;
         box-sizing: border-box;
         -webkit-font-smoothing: antialiased;
@@ -68,7 +68,7 @@
     
     .content {
         display: flex;
-        margin: 82px auto 32px;
+        margin: 62px auto 32px;
         padding: 0 16px;
         max-width: 960px;
         flex-direction: column;
@@ -112,7 +112,7 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
     <img src="assets/logos/titulo.png" height="40" width="40" />
-    <span>Solitario - Duelo por la tierra media</span>
+    <span>Jugador IA</span>
     <div class="spacer"></div>
     <app-ayuda-facciones></app-ayuda-facciones>
     <app-ayuda-iconos></app-ayuda-iconos>
@@ -120,7 +120,7 @@
 </div>
 
 <div class="content" role="main">
-    <div class="container text-center">
+    <div class="container text-center pt-3">
         <div class="row">
             <div class="col">
                 <app-personaje></app-personaje>

@@ -18,27 +18,22 @@ export class PersonajeComponent {
     'assets/personajes/Eowins.png'
  ];
 
- displayedImages: string[] = []; // Almacena las imágenes mostradas
  currentImage: string = ''; // Imagen que se muestra actualmente
+ currentIndice: number = -1; 
 
  constructor() {
   this.showRandomImage();
   }
 
-  // Función para mostrar una imagen aleatoria sin repetición
+  // Función para mostrar la imagen siguiente
   showRandomImage(): void {
-    if (this.displayedImages.length === this.images.length) {
-      this.displayedImages = []; // Reinicia las imágenes vistas si ya se han mostrado todas
+    if (this.currentIndice === this.images.length - 1) {
+      this.currentIndice = -1; // Reinicia las imágenes vistas si ya se han mostrado todas
     }
 
-    let newImage: string;
-    do {
-      const randomIndex = Math.floor(Math.random() * this.images.length);
-      newImage = this.images[randomIndex];
-    } while (this.displayedImages.includes(newImage));
+    this.currentIndice = this.currentIndice + 1;
 
-    this.currentImage = newImage;
-    this.displayedImages.push(newImage); // Añadir la imagen actual a las ya vistas
+    this.currentImage = this.images[this.currentIndice];
   }
 
   // Función para cambiar de imagen al hacer clic

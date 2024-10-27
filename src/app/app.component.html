@@ -42,8 +42,8 @@
         height: 60px;
         display: flex;
         align-items: center;
-        background-color: #000000;
-        color: #e8b802;
+        background-color: #000000 !important;
+        color: #e8b802 !important;
         font-weight: 600;
     }
     
@@ -51,19 +51,9 @@
         margin: 0 16px;
     }
     
-    .toolbar #twitter-logo {
-        height: 40px;
-        margin: 0 8px;
-    }
-    
-    .toolbar #youtube-logo {
-        height: 40px;
-        margin: 0 16px;
-    }
-    
-    .toolbar #twitter-logo:hover,
-    .toolbar #youtube-logo:hover {
-        opacity: 0.8;
+    .toolbar button {
+        background-color: #000000;
+        color: #e8b802;
     }
     
     .content {
@@ -114,6 +104,7 @@
     <img src="assets/logos/titulo.png" height="60" width="60" />
     <span>Jugador IA</span>
     <div class="spacer"></div>
+    <button (click)="toggleAudio()">{{ buttonText }}</button>
     <app-ayuda-facciones></app-ayuda-facciones>
     <app-ayuda-iconos></app-ayuda-iconos>
     <app-reglas></app-reglas>

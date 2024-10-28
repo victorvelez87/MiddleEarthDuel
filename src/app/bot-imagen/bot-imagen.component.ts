@@ -25,6 +25,7 @@ export class BotImagenComponent {
  displayedImages: string[] = []; // Almacena las imágenes mostradas
  currentImage: string = ''; // Imagen que se muestra actualmente
  currentCard: string = '';
+ currentBorder: string = "shadow-warning";
 
  constructor() {
   this.showRandomImage();
@@ -41,6 +42,12 @@ export class BotImagenComponent {
       const randomIndex = Math.floor(Math.random() * this.images.length);
       newImage = this.images[randomIndex];
     } while (this.displayedImages.includes(newImage));
+
+    if (this.currentBorder === "shadow-black") {
+      this.currentBorder = "shadow-warning";
+    } else {
+      this.currentBorder = "shadow-black";
+    }
 
     this.currentImage = newImage;
     this.currentCard = newImage.replace("assets/botCartas/","").replace(".jpg","");

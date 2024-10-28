@@ -11,3 +11,23 @@
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Custom shadow and shadow colors */
+
+.shadow {
+    --bs-shadow-rgb: 0, 0, 0;
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-shadow-rgb), 0.75) !important;
+}
+
+.shadow-warning {
+    --bs-shadow-rgb: var(--bs-warning-rgb);
+}
+
+.shadow-dark {
+    --bs-shadow-rgb: var(--bs-dark-rgb);
+}
+
+.shadow-danger {
+    --bs-shadow-rgb: var(--bs-danger-rgb);
+}
